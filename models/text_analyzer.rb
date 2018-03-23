@@ -26,7 +26,7 @@ class TextAnalyzer
     arr2 = {} #empty hash
 
     arr1.map do |c|
-      arr2[c] =  arr.count(c) #makes the letter a key and sets the value to the count of that letter in the original array of all letters
+      arr2[c] =  arr.count(c) #makes the letter a key and sets the value to the count of that letter in the original array of all letters, filling the hash with letters and their associated counts
     end
 
     biggest = { arr2.keys.first => arr2.values.first }
