@@ -31,7 +31,7 @@ class TextAnalyzer
 
     biggest = { arr2.keys.first => arr2.values.first } #sets the hash which is used for base comparison
 
-    arr2.each do |key, value|
+    arr2.each do |key, value| #iterates through the hash, and finds the letter with the biggest count
       if value > biggest.values.first #if the letter count is bigger than the base of comparison
         biggest = {} #empty the hash
         biggest[key] = value #set the hash equal to the new bigger letter count
