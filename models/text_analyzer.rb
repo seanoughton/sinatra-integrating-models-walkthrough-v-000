@@ -29,12 +29,12 @@ class TextAnalyzer
       arr2[c] =  arr.count(c) #makes the letter a key and sets the value to the count of that letter in the original array of all letters, filling the hash with letters and their associated counts
     end
 
-    biggest = { arr2.keys.first => arr2.values.first }
+    biggest = { arr2.keys.first => arr2.values.first } #sets the hash which is used for base comparison
 
     arr2.each do |key, value|
-      if value > biggest.values.first
-        biggest = {}
-        biggest[key] = value
+      if value > biggest.values.first #if the letter count is bigger than the base of comparison
+        biggest = {} #empty the hash
+        biggest[key] = value #set the hash equal to the new bigger letter count
       end
     end
 
