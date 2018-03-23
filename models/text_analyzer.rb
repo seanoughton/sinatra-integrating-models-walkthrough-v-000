@@ -22,7 +22,7 @@ class TextAnalyzer
   def most_used_letter
     s1 = text.gsub(/[^a-z]/, '') # gets rid of spaces
     arr = s1.split('')
-    arr1 = arr.uniq
+    arr1 = arr.uniq #gives you an array of the letters used, no repeats
     arr2 = {}
 
     arr1.map do |c|
